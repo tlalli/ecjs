@@ -1,0 +1,20 @@
+/*
+Nombre: Humberto Carrillo Segoviano
+Fecha: 17/febrero/2023
+Descripción: Este programa imprime un cuadrado con n filas y n columnas utilizando el caracter asterisco (*), de acuerdo al número que proporciona el usuario.
+*/
+var numrc = prompt('Dame el número de renglones y columnas:')
+console.log('Se pintará un cuadrado con: ',numrc,'filas y ',numrc,'columnas')
+console.log('Presiona <Enter> para continuar.')
+pausa = prompt('')
+var caracter="* ";
+  /* Pinta cuadrado */
+  for (var i = 1; i <= numrc; i++) {
+      var col = "";
+      for (var j = 1; j <= numrc; j++) {
+        //rellena las columnas
+        col+=caracter;
+        //console.log(col)
+      }
+   console.log(col)
+  } 
